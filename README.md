@@ -1,3 +1,16 @@
+## Notes
+Note: I used a Code space, but the course was expecting to clone the repo in my local drive
+
+How to use each chapter exercise files:
+- Spin a virtual environment: python3 -m virtualenv \<ch1\>
+  Note: if you get "No module named virtualenv", install it first with pip install virtualenv (I used virtualenv instead of venv, because it was what the course was doing)
+- Active it: source \<ch1\>/bin/activate
+- Install dependencies: python -m pip install -r \<ch1\>_requirements.txt
+Note: When running the cells the code space jupyter notebook for the first time I selected the <ch1> environment as the engine
+
+Used a Key generated at: OpenAI GPT-4.1 · GitHub Models https://github.com/marketplace/models/azure-openai/gpt-4-1/playground (more info at "Hands-On AI: Introduction to Retrieval-Augmented Generation (RAG) - Yujian Tang")
+Certificate attached
+
 # Advanced RAG Applications with Vector Databases
 This is the repository for the LinkedIn Learning course `Advanced RAG Applications with Vector Databases`. The full course is available from [LinkedIn Learning][lil-course-url].
 
