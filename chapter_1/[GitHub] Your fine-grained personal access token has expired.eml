@@ -1,0 +1,346 @@
+Received: from SJ5PPFF62310189.namprd12.prod.outlook.com
+ (2603:10b6:a0f:fc02::9a9) by BN7PR12MB2708.namprd12.prod.outlook.com with
+ HTTPS; Sat, 18 Oct 2025 01:11:19 +0000
+Received: from CWLP265CA0291.GBRP265.PROD.OUTLOOK.COM (2603:10a6:401:5d::15)
+ by SJ5PPFF62310189.namprd12.prod.outlook.com (2603:10b6:a0f:fc02::9a9) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.9228.11; Sat, 18 Oct
+ 2025 01:11:17 +0000
+Received: from AM2PEPF0001C714.eurprd05.prod.outlook.com
+ (2603:10a6:401:5d:cafe::4b) by CWLP265CA0291.outlook.office365.com
+ (2603:10a6:401:5d::15) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.9228.13 via Frontend Transport; Sat,
+ 18 Oct 2025 01:11:14 +0000
+Authentication-Results: spf=pass (sender IP is 192.30.252.204)
+ smtp.mailfrom=github.com; dkim=pass (signature was verified)
+ header.d=github.com;dmarc=pass action=none
+ header.from=github.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of github.com designates
+ 192.30.252.204 as permitted sender) receiver=protection.outlook.com;
+ client-ip=192.30.252.204; helo=out-21.smtp.github.com; pr=C
+Received: from out-21.smtp.github.com (192.30.252.204) by
+ AM2PEPF0001C714.mail.protection.outlook.com (10.167.16.184) with Microsoft
+ SMTP Server (version=TLS1_3, cipher=TLS_AES_256_GCM_SHA384) id 15.20.9253.7
+ via Frontend Transport; Sat, 18 Oct 2025 01:11:13 +0000
+X-IncomingTopHeaderMarker: OriginalChecksum:1208A1F4F08234750EDE1230E2B4D33FF15B95537A549EC88D6FC87AC0E51521;UpperCasedChecksum:17204371758B296FE024C518B799AE1807B86C3090807F59FB0E2B22F5F6B262;SizeAsReceived:1038;Count:11
+Received: from github.com (hubbernetes-node-563cb2f.ac4-iad.github.net [10.52.147.36])
+	by smtp.github.com (Postfix) with ESMTPA id D114F4010D8
+	for <Gabriel.Coy@hotmail.com>; Fri, 17 Oct 2025 18:11:12 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=github.com;
+	s=pf2023; t=1760749872;
+	bh=0SQBkU68po1u4ohz1/vKag0+BrNXVTovM/0O9I+I12s=;
+	h=Date:From:To:Subject:From;
+	b=J75syg6mvoJalgIiCiM4OsWaPj0AQl4B1O3zu1ZEX00O+ZGUm61ya9tKbhuGVZIGj
+	 buQCgpwHapTpOC1EVvh/rJ9rQsd9hWbH8an+eF/BD1SxVghE/2+nVLTQ/7D20RM4AN
+	 nMdGRTOGBOCi0ia+LuAcEyDNCJOL3xFRx6La96ng=
+Date: Fri, 17 Oct 2025 18:11:12 -0700
+From: GitHub <noreply@github.com>
+To: GabrielECoy <Gabriel.Coy@hotmail.com>
+Message-ID: <68f2e930ceac2_c210d811723c@sharedworker-5ff9cf94bd-mrrhc.mail>
+Subject: [GitHub] Your fine-grained personal access token has expired
+Content-Type: multipart/alternative;
+	boundary="--==_mimepart_68f2e9305cbea_c210d81171ed"; charset="UTF-8"
+Content-Transfer-Encoding: 7bit
+X-Auto-Response-Suppress: All
+X-IncomingHeaderCount: 11
+Return-Path: noreply@github.com
+X-MS-Exchange-Organization-ExpirationStartTime: 18 Oct 2025 01:11:14.1258
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: f687b2ec-a19b-466c-98ca-08de0de33b90
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: AM2PEPF0001C714:EE_|SJ5PPFF62310189:EE_|BN7PR12MB2708:EE_
+X-MS-Exchange-Organization-AuthSource: AM2PEPF0001C714.eurprd05.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 10/18/2025 1:03:55 AM
+X-MS-Office365-Filtering-Correlation-Id: f687b2ec-a19b-466c-98ca-08de0de33b90
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 192.30.252.204
+X-SID-PRA: NOREPLY@GITHUB.COM
+X-SID-Result: PASS
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:3;ARA:1444111002|8900799020|461199028|21080799006|10300799035|68400799013|9400799040|9000799056|1680799066|56899033|1360799030|1370799030|1380799030|1602099012|440099028|4302099013|3412199025;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 18 Oct 2025 01:11:13.8939
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: f687b2ec-a19b-466c-98ca-08de0de33b90
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: AM2PEPF0001C714.eurprd05.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SJ5PPFF62310189
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:05.2342710
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.9228.000
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;ex:0;auth:1;dest:I;ENG:(5062000311)(920221119095)(90000117)(920221120095)(90012020)(91020020)(91040095)(9050020)(9100341)(944500132)(4810010)(4910033)(9575002)(10195002)(9320005)(120001);
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MTtHRD0xO1NDTD0z
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?OW81WS9rMytVaFo1OFhMNUxycUNkdlJYRGFVaXlnY3MzK3lHeUVBcnBoaFJE?=
+ =?utf-8?B?OGkrSVRnTmNaYkVRRGVQeTFRbEpITWZYcUNEbitBTHFtek8xU1lYbExzRlNZ?=
+ =?utf-8?B?QjBuQ2hNS1k0UVJITGlZUE00THdVWjFhYzhGY3g0eGFWakxnSHMvUFd5cHpi?=
+ =?utf-8?B?UDhxQ1lQWVhvUG1ocCtnQzF3VkpaS1dYWHhBbGhOVnQ4cWpxK1ZIN1dJSVdv?=
+ =?utf-8?B?N0MySkJ3Q3VlOTBnT3NxREFXdG1wb1hJNGluY1pydG1qUmcwaUxSQ0kvNFg1?=
+ =?utf-8?B?VEc3bkhBbjJkZ1AwNURzZkcvMkI5THBBZFB0cU9zTDUwTWpZMkxsc1pQaFd2?=
+ =?utf-8?B?SDRUZHJaLzd0WDVOc3JmRjNjMXFTS2o5VzVuV1J3bnhzbkJnSmI1L2RWOUFV?=
+ =?utf-8?B?NUVCbDV4Ni9sbytPY2MwZWQ5U3c3OFZwZmFCeWdWOFQ3V1E3TmQwNklFUjhk?=
+ =?utf-8?B?OVZJSUwzTS9zNEVyZEMzZkZFNWtBMGtuYjM3UnVYdFZlaDFDc3gzSU1PbnJr?=
+ =?utf-8?B?RHliVWd5bURObkh1OVhWbVd1VDdoYjJHRGM3ZTlYZm5UVWVZNTRtd3hTNWRL?=
+ =?utf-8?B?NGtvK3dKRXJHcmdpR3NnTEpESEthTURmNWFGS0xrUW1WTHpCbW1UL0cyNGNa?=
+ =?utf-8?B?aTVYM2lyUFhOT1JDUUFaSWJKR0lwZ2R3VHc3bDdzZDhWS01xeVVuSGxuN2RD?=
+ =?utf-8?B?clg0UDlRS0FNWFJqeWtOUDVpM0ZMVi9xMWtqUWFhdnFzaXovaktGMFNKQWhu?=
+ =?utf-8?B?Z0x4NUhUWFJyTWNaYnJNYnJnMGVLNW9KZjNnbStSQlp2WWhsOXE2RVJvLyts?=
+ =?utf-8?B?QTJzSXF0akMxVDAxVnVhQWhwczQxdmt4V2VTdVVWOXRBQVh3THY0c0k4T004?=
+ =?utf-8?B?VG1sZERGSGlBb0tEQmxkWStVWUhUaGZRSW10T2UzVDBRQmMzRzJQOUtGMmZw?=
+ =?utf-8?B?c3ZQbWdTYkM1bnBaWEFLaVV4d2YvVEZiNU0rWEdPYTM2M2lEZWczSFBocnZy?=
+ =?utf-8?B?dTYxdEh1bVdwZHpwVjQ0Qnh4Uk52YThxSjJkZVNsY3VpMHQzTHM1SlZxVE5X?=
+ =?utf-8?B?dmkyNGpjR2FVL0FxUkZwUWxPZy8vZ3pzREc0R25zcTlvdFRYN1hiQndZTWUz?=
+ =?utf-8?B?YW82Y09wMUpwNVJEVFBMNDMrcm9xVCtYUFl5Y0ZmcG9SRWJsdHkwVTBBUm9R?=
+ =?utf-8?B?VEIxMElENFBYSWhRajB3NjUrWVhtYmtOZDBkSmM4azJzK1k2Y2pxZHZVTVlH?=
+ =?utf-8?B?azBPMkNvTnNvekhiMHdiVjU1M2ZuMDJwSTBZbmk4bjBaY3Ftc1JMK1RjaGRa?=
+ =?utf-8?B?Y0JEL3dCeFhiYm5XQkEzVjJkOFMzcUJ2ZnVGSlR3VGluMUdzVHZUMGp4Y0Iz?=
+ =?utf-8?B?am1JUkMxU1hOR3JBczBXYWNpdlpXRHNReXlHY21oUTVUQVFmeGh4SmF2aUs4?=
+ =?utf-8?B?V0VtYWpuZktXay9EQUJFaDNkNmtaaU9ncnUxbElsQnlNVE81YXR3NDh5K2Nn?=
+ =?utf-8?B?c1UzK1BwWlA5ZXJlTjJVUFpVdEhGYzl1UDBTNkREZURBbk1nTGxwTGN1azVL?=
+ =?utf-8?B?NW5oZ2pQV3pueFJmUit3N09mUnpFRFhIVy9rK05qWHVhYUJtYUh0TFdYQlda?=
+ =?utf-8?B?T0tITnJ6NE5vY0VVL21vUHlXRXprMnllaE5pTEVWUk1TYVNxKzMvNVQ1cGhs?=
+ =?utf-8?B?NnVkeVlmeitYMkRTN2R2bTJoZlBkcC9ITjlwWVh3NW1XT1B0VDhVV3o2dExy?=
+ =?utf-8?B?dFZ2ZHdNYmZGRE5qeTJGbHpPQWVaaXd3cEdHVk9VZk9EOURFckFiM094TVk5?=
+ =?utf-8?B?bXFTSWwzMGM3U2I0REJ4azJNWXYwbTFWbE9mOVVlRXR6ZU5YZzdJWFdsZVJO?=
+ =?utf-8?B?SmZKdXMvYkowakFiT2Y4aWVXRzBiZXlYTSt6Wmc0VkNabGtnMjg0bU1HcFkv?=
+ =?utf-8?B?QUdRZDMrVDNBbmltaXY5MkI2S2xvWVcrNHdoZEhFQVhXWW9PUkpwOU94WU9U?=
+ =?utf-8?B?SmdvS0lKeE5CeDgxSk5mcXRFTjJ6MWxIMkdUU1JmT1FSeC9XVDYzT2E1NFpy?=
+ =?utf-8?B?ajkyeUlKYktQRnFBdVVqbTFjUHVQY1orM3YweWpBaXRJUVRidjRzL1hFZEtl?=
+ =?utf-8?B?RGxrd0xNaWZsNndVQ0lxd2FydmRUTUZ1dStockY1SlZEVkx3NmNJUFhYVktJ?=
+ =?utf-8?B?MnRXNkRmdWppd2Z0YnZlU29UaTZsK3NrbTZrdUFzbm5jdlR2ZWNiOGZsOXRT?=
+ =?utf-8?B?WUJFelhSeHhWYW5pRnNGNzM1bXF5d2NGMjNmNFJmYTJNam9HSDdKNVYvejNM?=
+ =?utf-8?B?MTNTTXhXUUFmWlZHSU1MZ2IwY1ZIOXJicmJFTCtqTG9hMEVLS0pIOXBHYTg5?=
+ =?utf-8?B?ZU1YWjlON1IvcjBpQWt2Q0VNaHp6OTd0VGt1VWw5ZENDaExweDZETG5Xd08z?=
+ =?utf-8?B?bGRHTFI2S3FFejAyZ01DYmJWZFRXR25pU0xldWZaQ29kSkNQSVVJMUZydHpY?=
+ =?utf-8?B?aW51VnZKMGhvM1FyVW5TamNZOVNQaW11K2xsSzZqK3BsMGV4Sy81V0pBYzVo?=
+ =?utf-8?Q?RuvSbwX1o7NHx7wl53mhLqU8nxsZFp?=
+MIME-Version: 1.0
+
+----==_mimepart_68f2e9305cbea_c210d81171ed
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 7bit
+
+Hey GabrielECoy,
+
+Your fine-grained personal access token "GitHub Models token", has expired.
+
+If this token is still needed, visit https://github.com/settings/personal-access-tokens/9079155/regenerate to generate an equivalent.
+
+If you run into problems, please contact support by visiting https://github.com/contact
+
+Thanks,
+The GitHub Team
+
+----==_mimepart_68f2e9305cbea_c210d81171ed
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" style="font-family: sans-serif; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; box-sizing: border-box;" xml:lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title></title>
+    
+  </head>
+  <body style="box-sizing: border-box; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;; font-size: 14px; line-height: 1.5; color: #24292e; background-color: #fff; margin: 0;" bgcolor="#fff">
+    <table align="center" class="container-sm width-full" width="100%" style="box-sizing: border-box; border-spacing: 0; border-collapse: collapse; max-width: 544px; margin-right: auto; margin-left: auto; width: 100% !important; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;">
+      <tr style="box-sizing: border-box; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;">
+        <td class="center p-3" align="center" valign="top" style="box-sizing: border-box; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important; padding: 16px;">
+          <center style="box-sizing: border-box; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;">
+            <table border="0" cellspacing="0" cellpadding="0" align="center" class="width-full container-md" width="100%" style="box-sizing: border-box; border-spacing: 0; border-collapse: collapse; max-width: 768px; margin-right: auto; margin-left: auto; width: 100% !important; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;">
+  <tr style="box-sizing: border-box; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;">
+    <td align="center" style="box-sizing: border-box; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important; padding: 0;">
+              <table style="box-sizing: border-box; border-spacing: 0; border-collapse: collapse; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;">
+  <tbody style="box-sizing: border-box; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;">
+    <tr style="box-sizing: border-box; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;">
+      <td height="16" style="font-size: 16px; line-height: 16px; box-sizing: border-box; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important; padding: 0;">&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+              <table border="0" cellspacing="0" cellpadding="0" align="left" width="100%" style="box-sizing: border-box; border-spacing: 0; border-collapse: collapse; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;">
+                <tr style="box-sizing: border-box; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;">
+                  <td class="text-center" style="box-sizing: border-box; text-align: center !important; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important; padding: 0;" align="center">
+                    <img src="https://github.githubassets.com/assets/octocat-logo-805b5c3e249f.png" alt="GitHub" width="32" style="box-sizing: border-box; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important; border-style: none;">
+                    <h2 class="lh-condensed mt-2 text-normal" style="box-sizing: border-box; margin-top: 8px !important; margin-bottom: 0; font-size: 24px; font-weight: 400 !important; line-height: 1.25 !important; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;">
+                        <strong style="font-weight: 600; box-sizing: border-box; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;">@GabrielECoy</strong>, your fine-grained personal access token has expired.
+
+                    </h2>
+                  </td>
+                </tr>
+              </table>
+              <table style="box-sizing: border-box; border-spacing: 0; border-collapse: collapse; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;">
+  <tbody style="box-sizing: border-box; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;">
+    <tr style="box-sizing: border-box; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;">
+      <td height="16" style="font-size: 16px; line-height: 16px; box-sizing: border-box; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important; padding: 0;">&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+</td>
+  </tr>
+</table>
+            <table width="100%" class="width-full" style="box-sizing: border-box; border-spacing: 0; border-collapse: collapse; width: 100% !important; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;">
+              <tr style="box-sizing: border-box; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;">
+                <td class="border rounded-2 d-block" style="box-sizing: border-box; border-radius: 6px !important; display: block !important; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important; padding: 0; border: 1px solid #e1e4e8;">
+                  <table align="center" class="width-full text-center" style="box-sizing: border-box; border-spacing: 0; border-collapse: collapse; width: 100% !important; text-align: center !important; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;">
+                    <tr style="box-sizing: border-box; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;">
+                      <td class="p-3 p-sm-4" style="box-sizing: border-box; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important; padding: 16px;">
+                        <table border="0" cellspacing="0" cellpadding="0" align="center" class="width-full" width="100%" style="box-sizing: border-box; border-spacing: 0; border-collapse: collapse; width: 100% !important; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;">
+  <tr style="box-sizing: border-box; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;">
+    <td align="center" style="box-sizing: border-box; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important; padding: 0;">
+                          
+<table class="width-full" style="box-sizing: border-box; border-spacing: 0; border-collapse: collapse; width: 100% !important; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;">
+  <tbody style="box-sizing: border-box; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;">
+    <tr style="box-sizing: border-box; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;">
+      
+  <td style="box-sizing: border-box; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important; padding: 0;">
+  <table style="box-sizing: border-box; border-spacing: 0; border-collapse: collapse; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;">
+    <tr style="box-sizing: border-box; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;">
+      <td class="text-left" style="box-sizing: border-box; text-align: left !important; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important; padding: 0;" align="left">
+    <p style="box-sizing: border-box; margin-top: 0; margin-bottom: 10px; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;">Hey <strong style="font-weight: 600; box-sizing: border-box; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;">GabrielECoy</strong>!</p>
+
+    <p style="box-sizing: border-box; margin-top: 0; margin-bottom: 10px; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;">Your fine-grained personal access token (<a href="https://github.com/settings/personal-access-tokens/9079155" style="background-color: rgba(0,0,0,0); box-sizing: border-box; color: #0366d6; text-decoration: none; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;">GitHub Models token</a>) has expired.</p>
+
+    <p style="box-sizing: border-box; margin-top: 0; margin-bottom: 10px; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;">If this token is still needed, click the button below to generate an equivalent.</p>
+
+    <table style="box-sizing: border-box; border-spacing: 0; border-collapse: collapse; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;">
+  <tbody style="box-sizing: border-box; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;">
+    <tr style="box-sizing: border-box; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;">
+      <td height="16" style="font-size: 16px; line-height: 16px; box-sizing: border-box; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important; padding: 0;">&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" style="box-sizing: border-box; border-spacing: 0; border-collapse: collapse; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;">
+  <tr style="box-sizing: border-box; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;">
+    <td style="box-sizing: border-box; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important; padding: 0;">
+      <table border="0" cellspacing="0" cellpadding="0" width="100%" style="box-sizing: border-box; border-spacing: 0; border-collapse: collapse; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;">
+        <tr style="box-sizing: border-box; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;">
+          <td align="center" style="box-sizing: border-box; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important; padding: 0;">
+              <a href="https://github.com/settings/personal-access-tokens/9079155/regenerate" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large" style="background-color: #1f883d !important; box-sizing: border-box; color: #fff; text-decoration: none; position: relative; display: inline-block; font-size: inherit; font-weight: 500; line-height: 1.5; white-space: nowrap; vertical-align: middle; cursor: pointer; -webkit-user-select: none; user-select: none; border-radius: .5em; appearance: none; box-shadow: 0 1px 0 rgba(27,31,35,.1),inset 0 1px 0 hsla(0,0%,100%,.03); transition: background-color .2s cubic-bezier(0.3, 0, 0.5, 1); font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important; padding: .75em 1.5em; border: 1px solid #1f883d;">Regenerate your token</a>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+</td>
+      <td style="box-sizing: border-box; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important; padding: 0;"></td>
+    </tr>
+  </table>
+</td>
+
+    </tr>
+  </tbody>
+</table>
+
+
+</td>
+  </tr>
+</table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+
+              <table border="0" cellspacing="0" cellpadding="0" align="center" class="width-full f5 text-gray-light" width="100%" style="box-sizing: border-box; border-spacing: 0; border-collapse: collapse; color: #6a737d !important; width: 100% !important; font-size: 14px !important; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;">
+  <tr style="box-sizing: border-box; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;">
+    <td align="center" style="box-sizing: border-box; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important; padding: 0;">
+                <table style="box-sizing: border-box; border-spacing: 0; border-collapse: collapse; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;">
+  <tbody style="box-sizing: border-box; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;">
+    <tr style="box-sizing: border-box; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;">
+      <td height="16" style="font-size: 16px; line-height: 16px; box-sizing: border-box; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important; padding: 0;">&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+                  <table class="width-full" style="box-sizing: border-box; border-spacing: 0; border-collapse: collapse; width: 100% !important; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;">
+  <tbody style="box-sizing: border-box; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;">
+    <tr style="box-sizing: border-box; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;">
+      
+    <td style="box-sizing: border-box; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important; padding: 0;">
+  <table style="box-sizing: border-box; border-spacing: 0; border-collapse: collapse; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;">
+    <tr style="box-sizing: border-box; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;">
+      <td class="text-left" style="box-sizing: border-box; text-align: left !important; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important; padding: 0;" align="left">
+      Button not working? Paste the following link into your browser: <a href="https://github.com/settings/personal-access-tokens/9079155/regenerate" style="background-color: rgba(0,0,0,0); box-sizing: border-box; color: #0366d6; text-decoration: none; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;">https://github.com/settings/personal-access-tokens/9079155/regenerate</a>
+</td>
+      <td style="box-sizing: border-box; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important; padding: 0;"></td>
+    </tr>
+  </table>
+</td>
+
+    </tr>
+  </tbody>
+</table>
+
+                <hr style="box-sizing: content-box; height: 0; overflow: hidden; background-color: rgba(0,0,0,0); border-bottom-color: hsl(213.3333333333,10.843373494%,88.7254901961%); border-bottom-style: solid; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important; margin: 15px 0; border-width: 0 0 1px;">
+</td>
+  </tr>
+</table>
+
+            <table border="0" cellspacing="0" cellpadding="0" align="center" class="width-full text-center" width="100%" style="box-sizing: border-box; border-spacing: 0; border-collapse: collapse; width: 100% !important; text-align: center !important; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;">
+  <tr style="box-sizing: border-box; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;">
+    <td align="center" style="box-sizing: border-box; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important; padding: 0;">
+              <table style="box-sizing: border-box; border-spacing: 0; border-collapse: collapse; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;">
+  <tbody style="box-sizing: border-box; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;">
+    <tr style="box-sizing: border-box; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;">
+      <td height="16" style="font-size: 16px; line-height: 16px; box-sizing: border-box; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important; padding: 0;">&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+                  <p class="f6" style="box-sizing: border-box; margin-top: 0; margin-bottom: 10px; font-size: 12px !important; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;">
+                      <a href="https://github.com/settings/security-log" class="d-inline-block" style="background-color: rgba(0,0,0,0); box-sizing: border-box; color: #0366d6; text-decoration: none; display: inline-block !important; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;">Your security audit log</a> ・
+                      <a href="https://github.com/contact" class="d-inline-block" style="background-color: rgba(0,0,0,0); box-sizing: border-box; color: #0366d6; text-decoration: none; display: inline-block !important; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;">Contact support</a> 
+                  </p>
+              <table style="box-sizing: border-box; border-spacing: 0; border-collapse: collapse; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;">
+  <tbody style="box-sizing: border-box; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;">
+    <tr style="box-sizing: border-box; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;">
+      <td height="16" style="font-size: 16px; line-height: 16px; box-sizing: border-box; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important; padding: 0;">&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+              <p class="f5 text-gray-light" style="box-sizing: border-box; margin-top: 0; margin-bottom: 10px; color: #6a737d !important; font-size: 14px !important; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;"></p>
+</td>
+  </tr>
+</table>
+            <table border="0" cellspacing="0" cellpadding="0" align="center" class="width-full text-center" width="100%" style="box-sizing: border-box; border-spacing: 0; border-collapse: collapse; width: 100% !important; text-align: center !important; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;">
+  <tr style="box-sizing: border-box; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;">
+    <td align="center" style="box-sizing: border-box; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important; padding: 0;">
+  <table style="box-sizing: border-box; border-spacing: 0; border-collapse: collapse; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;">
+  <tbody style="box-sizing: border-box; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;">
+    <tr style="box-sizing: border-box; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;">
+      <td height="16" style="font-size: 16px; line-height: 16px; box-sizing: border-box; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important; padding: 0;">&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+  <p class="f6 text-gray-light" style="box-sizing: border-box; margin-top: 0; margin-bottom: 10px; color: #6a737d !important; font-size: 12px !important; font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot; !important;">GitHub, Inc. ・88 Colin P Kelly Jr Street ・San Francisco, CA 94107</p>
+</td>
+  </tr>
+</table>
+
+          </center>
+        </td>
+      </tr>
+    </table>
+    <!-- prevent Gmail on iOS font size manipulation -->
+   <div style="display: none; white-space: nowrap; box-sizing: border-box; font: 15px/0 apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </div>
+  </body>
+</html>
+
+----==_mimepart_68f2e9305cbea_c210d81171ed--
