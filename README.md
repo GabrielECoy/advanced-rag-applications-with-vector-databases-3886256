@@ -9,7 +9,26 @@ How to use each chapter exercise files:
 Note: When running the cells the code space jupyter notebook for the first time I selected the <ch1> environment as the engine
 
 Used a Key generated at: OpenAI GPT-4.1 · GitHub Models https://github.com/marketplace/models/azure-openai/gpt-4-1/playground (more info at "Hands-On AI: Introduction to Retrieval-Augmented Generation (RAG) - Yujian Tang")
-Certificate attached
+
+To import the Key I added a .env file with the OPENAI_API_KEY value in the default folder os.getcwd()
+Default folder: 
+Note: I added .env in .gitignore so the key was not added to source control
+
+Used the following to load the value
+print(os.getcwd())
+from dotenv import load_dotenv
+load_dotenv()
+Note: I changed the instanciation of OpenAI to point to Azure OpenAI endpoint (where GitHub models are hosted)
+
+To confirm the value was there I used:
+import dotenv_values
+print(len(dotenv_values()))
+for key, value in dotenv_values().items():
+    print(f"{key}: {value}")
+
+To clean the output of the cell before commiting into git
+from IPython.display import clear_output
+clear_output()
 
 # Advanced RAG Applications with Vector Databases
 This is the repository for the LinkedIn Learning course `Advanced RAG Applications with Vector Databases`. The full course is available from [LinkedIn Learning][lil-course-url].
